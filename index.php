@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['generate'])) {
         "seed" => -1
     ];
 
-    $apiUrl = "https://image.pollinations.ai/image/" . $encodedPrompt . "?" . http_build_query($queryParams);
+    $apiUrl = "https://gen.pollinations.ai/image/" . $encodedPrompt . "?" . http_build_query($queryParams);
 
     $ch = curl_init($apiUrl);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
