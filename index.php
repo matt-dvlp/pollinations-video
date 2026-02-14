@@ -240,7 +240,7 @@ video { margin-top: 10px; border-radius: 6px; }
         <label>Duration (seconds)</label>
         <select name="duration">
             <?php for ($i = 1; $i <= 10; $i++): ?>
-                <option value="<?php echo $i; ?>"><?php echo $i; ?> sec</option>
+                <option value="<?php echo $i, $i==4 ?? ' selected'; ?>"><?php echo $i; ?> sec</option>
             <?php endfor; ?>
         </select>
 
